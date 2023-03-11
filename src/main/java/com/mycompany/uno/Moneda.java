@@ -6,7 +6,7 @@ package com.mycompany.uno;
 
 /**
  *
- * @author mplab4.pc07
+ * @author valle
  */
 public class Moneda {
     private int Valor;

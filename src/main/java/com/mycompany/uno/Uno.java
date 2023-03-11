@@ -7,13 +7,12 @@ package com.mycompany.uno;
 
 /**
  *
- * @author mplab4.pc07
+ * @author valle
  */
 import java.util.Scanner;
 public class Uno {
 
     public static void main(String[] args) {
-        //System.out.println("Hello World!");
         Scanner l = new Scanner(System.in);
         System.out.println("Ingrese el valor del dolar");
         int vd = l.nextInt();
@@ -29,15 +28,22 @@ public class Uno {
         System.out.println("Ingrese el monto a convertir");
         int valor = l.nextInt();
         
+        //Calculo cd = new Calculo(cd,ce,cpa);
+        //Calculo ce = new Calculo(cd,ce,cpa);
+        //Calculo cpa = new Calculo(cd,ce,cpa);
+        //int cdf = cd.getCd();
+        //int cef = ce.getCe();
+        //int cpaf = cpa.getCpa();
         int cd = valor / d.getValor();
         int ce = valor / e.getValor();
         int cpa = valor / pa.getValor();
         
-        System.out.println(d);
-        System.out.println(e);
-        System.out.println(pa);
-        System.out.println(valor+ " pesos son "+cd+" dolares");
-        System.out.println(valor+ " pesos son "+ce+" dolares");
-        System.out.println(valor+ " pesos son "+cpa+" dolares");
+        System.out.println("El valor ingresado del dolar es "+d.getValor());
+        System.out.println("El valor ingresado del euro es "+e.getValor());
+        System.out.println("El valor ingresado del peso argentino es "+pa.getValor());
+        //System.out.println(valor+ " pesos son "+cdf+" dolares");
+        System.out.println(valor+ " pesos chilenos son "+cd+" dolares");
+        System.out.println(valor+ " pesos chilenos son "+ce+" euros");
+        System.out.println(valor+ " pesos chilenos son "+cpa+" pesos argentinos");
     }
 }
